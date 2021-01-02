@@ -1,1 +1,3 @@
 .venv/
+credentials.yaml
+historical.csv
