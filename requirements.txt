@@ -2,3 +2,5 @@ robin-stocks==1.5.4
 pyyaml==5.3.1
 numpy==1.19.4
 pandas==1.2.0
+matplotlib==3.3.3
+mplfinance==0.12.7a4

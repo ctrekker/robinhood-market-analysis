@@ -29,5 +29,6 @@ print(f'Results: {COLOR_GREEN}{len(symbols)-len(failed_symbols)} succeeded{COLOR
 dataframe_file = 'historical.csv'
 historical_formatted = rh_dict_to_df(historical_data)
 historical_df = pd.DataFrame(historical_formatted, columns=list(historical_formatted.keys()))
+historical_df.rename(columns={'open_price': 'Open', 'close_price': 'Close', 'high_price': 'High', 'low_price': 'Low', 'volume': 'Volume'}, inplace=True)
 historical_df.to_csv(dataframe_file)
 print(f'Saved to {COLOR_CYAN}{dataframe_file}{COLOR_END}')
